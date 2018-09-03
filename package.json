@@ -1,0 +1,22 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "A microblogging application like Twitter for Coding-Academy by Epitech",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexandra-Lee/MEAN_Rush.git"
+  },
+  "author": "Alexandra Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexandra-Lee/MEAN_Rush/issues"
+  },
+  "homepage": "https://github.com/Alexandra-Lee/MEAN_Rush#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
