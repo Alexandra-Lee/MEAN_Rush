@@ -4,10 +4,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var router = express.Router();
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var indexRouter = require('./api/routes/index');
+var usersRouter = require('./api/routes/users');
 var port = process.env.PORT || 8080;
-var db = require('./db');
+var db = require('./database');
+var session = require('express-session');
+
 var app = express();
 
 // view engine setup
@@ -43,4 +45,9 @@ app.listen(port, function() {
   console.log('The server is listening on port: ' + port)
 });
 
+app.use(session({
+  secret: 'work hard',
+  resave: true,
+  saveUninitialized: false,
+}));
 module.exports = app;
