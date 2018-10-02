@@ -4,7 +4,7 @@ var WordsSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId, 
         ref: 'User'
     },
-    theWords: {type: String, min: [5, 'Can you say more than 4 letters?'],
+    theWords: {type: String, min: [5, 'Just say more than 4 letters?'],
     max: 140},
 });  
 
